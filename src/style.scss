@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import "../node_modules/bootstrap/scss/bootstrap";
+body {
+  font-family: "Montserrat";
+}
+.accordion-button.collapsed::after {
+  background: url("./icons/chevron-down.svg");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background: url("./icons/chevron-down.svg");
+}
+.accordion-item {
+  border: none;
+}
+
+.accordion-button:not(.collapsed) {
+  border: none;
+}
+
+.outline-cleaner:active:focus:target {
+  outline: 0 !important;
+  box-shadow: "none" !important;
+}
