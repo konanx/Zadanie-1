@@ -13,7 +13,10 @@ function Sekcja2() {
       }}
     >
       <div className="accordion-item">
-        <span className="accordion-header" id="firstInfoAccordionOpen">
+        <span
+          className="accordion-header"
+          id="firstInfoAccordionOpen"
+        >
           <button
             className="accordion-button"
             type="button"
@@ -41,15 +44,18 @@ function Sekcja2() {
           aria-labelledby="firstInfoAccordionOpen"
         >
           <div
-            className="accordion-body custom-accordion-body"
+            className="accordion-body custom-accordion-body w-100"
             style={{ border: 0 }}
           >
-            <form>
-              <div className="d-flex p-0 w-100" style={{ gap: "30px" }}>
-                <div className="w-100">
+            <div
+              className="container-fluid p-0 m-0"
+              style={{ gap: "30px" }}
+            >
+              <div className="row">
+                <div className="col-lg-4 col-12">
                   <label
                     htmlFor="informacjepodstawowe1"
-                    className="form-label"
+                    className="form-label mt-2"
                     style={{
                       fontSize: "15px",
                       fontWeight: "500",
@@ -66,11 +72,10 @@ function Sekcja2() {
                     style={{ text: "#6B7B83" }}
                   />
                 </div>
-                <div className="w-100">
+                <div className="col-lg-4 col-12">
                   <label
                     htmlFor="informacjepodstawowe2"
-                    className="form-label required"
-                    required={true}
+                    className="form-label mt-2"
                     style={{
                       fontSize: "15px",
                       fontWeight: "500",
@@ -81,10 +86,15 @@ function Sekcja2() {
                   </label>
 
                   <select
-                    className="form-select w-100"
+                    className="form-select"
                     style={{ color: "#6B7B83" }}
+                    defaultValue=""
                   >
-                    <option value="" selected disabled hidden>
+                    <option
+                      value=""
+                      disabled
+                      hidden
+                    >
                       Placeholder
                     </option>
                     <option value="1">1</option>
@@ -92,11 +102,10 @@ function Sekcja2() {
                     <option value="3">3</option>
                   </select>
                 </div>
-                <div className="w-100">
+                <div className="col-lg-4 col-12">
                   <label
                     htmlFor="informacjepodstawowe2"
-                    className="form-label required"
-                    required={true}
+                    className="form-label mt-2"
                     style={{
                       fontSize: "15px",
                       fontWeight: "500",
@@ -107,10 +116,15 @@ function Sekcja2() {
                   </label>
 
                   <select
-                    className="form-select w-100"
+                    className="form-select"
                     style={{ color: "#6B7B83" }}
+                    defaultValue=""
                   >
-                    <option value="" selected disabled hidden>
+                    <option
+                      value=""
+                      disabled
+                      hidden
+                    >
                       Placeholder
                     </option>
                     <option value="1">1</option>
@@ -119,55 +133,60 @@ function Sekcja2() {
                   </select>
                 </div>
               </div>
-              <div className="d-flex p-0 w-100 mt-3" style={{ gap: "30px" }}>
-                <div className="" style={{ width: "456px" }}>
-                  <label
-                    htmlFor="informacjepodstawowe4"
-                    className="form-label"
-                    style={{
-                      fontSize: "15px",
-                      fontWeight: "500",
-                      color: "#394348",
-                    }}
-                  >
-                    Dropdown
-                  </label>
+            </div>
+            <div className="row mt-2">
+              <div className="col-12 col-lg-4">
+                <label
+                  htmlFor="informacjepodstawowe4"
+                  className="form-label mt-2"
+                  style={{
+                    fontSize: "15px",
+                    fontWeight: "500",
+                    color: "#394348",
+                  }}
+                >
+                  Dropdown
+                </label>
 
-                  <select
-                    className="form-select w-100"
-                    style={{ color: "#6B7B83" }}
+                <select
+                  className="form-select"
+                  style={{ color: "#6B7B83" }}
+                  defaultValue=""
+                >
+                  <option
+                    value=""
+                    disabled
+                    hidden
                   >
-                    <option value="" selected disabled hidden>
-                      Placeholder
-                    </option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                  </select>
-                </div>
-                <div className="w-100">
-                  <label
-                    htmlFor="informacjepodstawowe5"
-                    className="form-label"
-                    style={{
-                      fontSize: "15px",
-                      fontWeight: "500",
-                      color: "#394348",
-                    }}
-                  >
-                    Opis
-                  </label>
-
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="informacjepodstawowe5"
-                    placeholder="Placeholder"
-                    style={{ text: "#6B7B83" }}
-                  />
-                </div>
+                    Placeholder
+                  </option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
               </div>
-            </form>
+              <div className="col">
+                <label
+                  htmlFor="informacjepodstawowe5"
+                  className="form-label mt-2"
+                  style={{
+                    fontSize: "15px",
+                    fontWeight: "500",
+                    color: "#394348",
+                  }}
+                >
+                  Opis
+                </label>
+
+                <input
+                  type="text"
+                  className="form-control"
+                  id="informacjepodstawowe5"
+                  placeholder="Placeholder"
+                  style={{ text: "#6B7B83" }}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
