@@ -7,7 +7,7 @@ function Sekcja4() {
         Lista
       </span>
 
-      <div className="table-responsive">
+      <div className="table-responsive  mt-2">
         <table className="table">
           <thead
             style={{
@@ -18,7 +18,7 @@ function Sekcja4() {
               textTransform: "uppercase",
               fontWeight: 600,
               color: "#6B7B83",
-              flexDirection: "column",
+              whiteSpace: "nowrap",
             }}
           >
             <tr>
@@ -38,15 +38,16 @@ function Sekcja4() {
               fontSize: "15px",
               fontWeight: 500,
               color: "#394348",
+              whiteSpace: "nowrap",
             }}
           >
             <tr>
-              <td className="table-blue-text col-lg-12">12</td>
-              <td className="col-lg-12">Klient nr 1</td>
-              <td className="col-lg-12">05-09-2022 17:28</td>
-              <td className="col-lg-12">05-09-2022 17:32</td>
-              <td className="col-lg-12">Jan Kowalski</td>
-              <td className="col-lg-12">4/4</td>
+              <td className="table-blue-text">12</td>
+              <td>Klient nr 1</td>
+              <td>05-09-2022 17:28</td>
+              <td>05-09-2022 17:32</td>
+              <td>Jan Kowalski</td>
+              <td>4/4</td>
               <td>100%</td>
               <td>Nie</td>
               <td className="table-blue-text" role="button">
