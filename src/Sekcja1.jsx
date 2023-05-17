@@ -17,13 +17,14 @@ function Sekcja1() {
       <div
         style={{ width: "1px", height: "26px", border: "1px solid #D8D6DE" }}
       />
-      <Home style={{ width: 14, height: 14, color: "#05A8FF" }} />
+      <Home style={{ width: 14, height: 14, color: "#05A8FF" }} role="button" />
       <ChevronRight style={{ width: 14, height: 14, color: "#6B7B83" }} />
       <span
         style={{
           fontSize: "14px",
           color: "#05A8FF",
         }}
+        role="button"
       >
         Start
       </span>

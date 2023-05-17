@@ -3,6 +3,7 @@ import Sekcja1 from "./Sekcja1";
 import Sekcja2 from "./Sekcja2";
 import Sekcja3 from "./Sekcja3";
 import Sekcja4 from "./Sekcja4";
+import ImportModal from "./ImportModal";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <Sekcja1 />
       <Sekcja2 />
       <Sekcja3 />
-      <Modal />
+      <ImportModal />
     </div>
   );
 }

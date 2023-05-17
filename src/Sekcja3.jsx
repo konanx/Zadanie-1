@@ -14,10 +14,7 @@ function Sekcja3() {
       }}
     >
       <div className="accordion-item">
-        <span
-          className="accordion-header"
-          id="secondInfoAccordionOpen"
-        >
+        <span className="accordion-header" id="secondInfoAccordionOpen">
           <button
             className="accordion-button"
             type="button"
@@ -48,102 +45,108 @@ function Sekcja3() {
             className="accordion-body custom-accordion-body d-flex flex-column w-100"
             style={{ border: 0 }}
           >
-            <div
-              className="d-flex p-0"
-              style={{ gap: "20px" }}
-            >
-              <button
-                className="btn"
-                style={{ padding: "10px 22px", backgroundColor: "#05A8FF" }}
-              >
-                <span
-                  style={{
-                    fontWeight: "500",
-                    fontSize: "14px",
-                    color: "#FFFFFF",
-                    letterSpacing: "0.4px",
-                  }}
-                >
-                  Importuj
-                </span>
-              </button>
-              <button
-                className="btn btn-outlined-primary outline-cleaner"
-                style={{
-                  color: "#05A8FF",
-                  display: "flex",
-                  alignItems: "center",
-                  padding: "10px 0px",
-                  gap: "10px",
-                  boxShadow: "none",
-                  outline: 0,
-                }}
-              >
-                <RefreshCw style={{ width: "14px", height: "14px" }} />
-                <span
-                  style={{
-                    fontSize: "14px",
-                    fontWeight: "500",
-                    letterSpacing: "0.4px",
-                  }}
-                >
-                  Aktualizuj
-                </span>
-              </button>
-              <button
-                className="btn btn-outlined-primary outline-cleaner"
-                style={{
-                  color: "#05A8FF",
-                  display: "flex",
-                  alignItems: "center",
-                  padding: "10px 0px",
-                  gap: "10px",
-                  boxShadow: "none",
-                  outline: 0,
-                }}
-              >
-                <Copy style={{ width: "14px", height: "14px" }} />
-                <span
-                  style={{
-                    fontSize: "14px",
-                    fontWeight: "500",
-                    letterSpacing: "0.4px",
-                  }}
-                >
-                  Kopiuj
-                </span>
-              </button>
-              <button
-                className="btn btn-outlined-primary outline-cleaner"
-                style={{
-                  color: "#05A8FF",
-                  display: "flex",
-                  alignItems: "center",
-                  padding: "10px 0px",
-                  gap: "10px",
-                  boxShadow: "none",
-                  outline: 0,
-                }}
-              >
-                <FileMinus style={{ width: "14px", height: "14px" }} />
-                <span
-                  style={{
-                    fontSize: "14px",
-                    fontWeight: "500",
-                    letterSpacing: "0.4px",
-                  }}
-                >
-                  Wyczyść
-                </span>
-              </button>
+            <div className="container p-0 m-0">
+              <div className="row" style={{ gap: "20px" }}>
+                <div className="col col-lg-auto">
+                  <button
+                    className="btn"
+                    style={{ padding: "10px 22px", backgroundColor: "#05A8FF" }}
+                    data-bs-toggle="modal"
+                    data-bs-target="#importModal"
+                  >
+                    <span
+                      style={{
+                        fontWeight: "500",
+                        fontSize: "14px",
+                        color: "#FFFFFF",
+                        letterSpacing: "0.4px",
+                      }}
+                    >
+                      Importuj
+                    </span>
+                  </button>
+                </div>
+                <div className="col col-lg-auto">
+                  <button
+                    className="btn btn-outlined-primary outline-cleaner"
+                    style={{
+                      color: "#05A8FF",
+                      display: "flex",
+                      alignItems: "center",
+                      padding: "10px 0px",
+                      gap: "10px",
+                      boxShadow: "none",
+                      outline: 0,
+                    }}
+                  >
+                    <RefreshCw style={{ width: "14px", height: "14px" }} />
+                    <span
+                      style={{
+                        fontSize: "14px",
+                        fontWeight: "500",
+                        letterSpacing: "0.4px",
+                      }}
+                    >
+                      Aktualizuj
+                    </span>
+                  </button>
+                </div>
+                <div className="col col-lg-auto">
+                  <button
+                    className="btn btn-outlined-primary outline-cleaner"
+                    style={{
+                      color: "#05A8FF",
+                      display: "flex",
+                      alignItems: "center",
+                      padding: "10px 0px",
+                      gap: "10px",
+                      boxShadow: "none",
+                      outline: 0,
+                    }}
+                  >
+                    <Copy style={{ width: "14px", height: "14px" }} />
+                    <span
+                      style={{
+                        fontSize: "14px",
+                        fontWeight: "500",
+                        letterSpacing: "0.4px",
+                      }}
+                    >
+                      Kopiuj
+                    </span>
+                  </button>
+                </div>
+                <div className="col col-lg-auto">
+                  <button
+                    className="btn btn-outlined-primary outline-cleaner"
+                    style={{
+                      color: "#05A8FF",
+                      display: "flex",
+                      alignItems: "center",
+                      padding: "10px 0px",
+                      gap: "10px",
+                      boxShadow: "none",
+                      outline: 0,
+                    }}
+                  >
+                    <FileMinus style={{ width: "14px", height: "14px" }} />
+                    <span
+                      style={{
+                        fontSize: "14px",
+                        fontWeight: "500",
+                        letterSpacing: "0.4px",
+                      }}
+                    >
+                      Wyczyść
+                    </span>
+                  </button>
+                </div>
+              </div>
             </div>
             <div className="container mt-4 m-0 p-0">
               <div className="row gx-3 gy-4">
                 <div className="col-12 col-lg-4">
-                  <label
-                    className="form-label"
-                    htmlFor="iInfoSzczegolowe1"
-                  >
+                  <label className="form-label" htmlFor="iInfoSzczegolowe1">
                     Tekst
                   </label>
                   <input
@@ -174,11 +177,7 @@ function Sekcja3() {
                     style={{ color: "#6B7B83" }}
                     defaultValue=""
                   >
-                    <option
-                      value=""
-                      disabled
-                      hidden
-                    >
+                    <option value="" disabled hidden>
                       Placeholder
                     </option>
                     <option value="1">1</option>
@@ -208,10 +207,7 @@ function Sekcja3() {
               </div>
               <div className="row gx-3 gy-4 mt-1">
                 <div className="col-12 col-lg-4">
-                  <label
-                    className="form-label"
-                    htmlFor="iInfoSzczegolowe4"
-                  >
+                  <label className="form-label" htmlFor="iInfoSzczegolowe4">
                     Tekst
                   </label>
                   <input
@@ -227,10 +223,7 @@ function Sekcja3() {
                   />
                 </div>
                 <div className="col-12 col-lg-4">
-                  <label
-                    className="form-label"
-                    htmlFor="iInfoSzczegolowe5"
-                  >
+                  <label className="form-label" htmlFor="iInfoSzczegolowe5">
                     Tekst
                   </label>
                   <input
@@ -283,11 +276,7 @@ function Sekcja3() {
                     style={{ color: "#6B7B83" }}
                     defaultValue=""
                   >
-                    <option
-                      value=""
-                      disabled
-                      hidden
-                    >
+                    <option value="" disabled hidden>
                       Placeholder
                     </option>
                     <option value="1">1</option>
@@ -296,10 +285,7 @@ function Sekcja3() {
                   </select>
                 </div>
                 <div className="col-12 col-lg-4">
-                  <label
-                    className="form-label"
-                    htmlFor="iInfoSzczegolowe8"
-                  >
+                  <label className="form-label" htmlFor="iInfoSzczegolowe8">
                     Tekst
                   </label>
                   <input
